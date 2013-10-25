@@ -9,6 +9,10 @@ unobtrusively integrated into any application or framework that supports
 [Connect](http://www.senchalabs.org/connect/)-style middleware, including
 [Express](http://expressjs.com/).
 
+## Disclaimer
+
+This project was just appropriated from another source and the current maintainers are still testing it for correctness. We make no claims as to its functionality.
+
 ## Install
 
     $ npm install passport-eventbrite-oauth
@@ -47,7 +51,7 @@ application:
     app.get('/auth/eventbrite',
       passport.authenticate('eventbrite'));
 
-    app.get('/auth/eventbrite/callback', 
+    app.get('/auth/eventbrite/callback',
       passport.authenticate('eventbrite', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
