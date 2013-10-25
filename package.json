@@ -1,38 +1,46 @@
 {
-  "name" : "passport-eventbrite-oauth",
-  "version" : "0.1.0",
-  "description" : "EventBrite (OAuth2) authentication strategies for Passport.",
-  "keywords" : ["passport", "eventbrite", "auth", "authn", "authentication", "identity"],
-  "repository" : {
-    "type" : "git",
-    "url" : "git://github.com/venkatperi/passport-eventbrite-oauth.git"
+  "name": "passport-eventbrite-oauth",
+  "version": "0.1.0",
+  "description": "EventBrite (OAuth2) authentication strategies for Passport.",
+  "keywords": [
+    "passport",
+    "eventbrite",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jamplify/passport-eventbrite-oauth.git"
   },
-  "bugs" : {
-    "url" : "http://github.com/venkatperi/passport-eventbrite-oauth/issues"
+  "bugs": {
+    "url": "http://github.com/jamplify/passport-eventbrite-oauth/issues"
   },
-  "author" : {
-    "name" : "Venkat Peri",
-    "email" : "venkatperi@gmail.com",
-    "url" : "http://www.vperi.com/"
+  "author": {
+    "name": "JP Erkelens",
+    "email": "jp@jamplify.com"
   },
-  "licenses" : [
+  "licenses": [
     {
-      "type" : "MIT",
-      "url" : "http://www.opensource.org/licenses/MIT"
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
     }
   ],
-  "main" : "./lib/passport-eventbrite-oauth",
-  "dependencies" : {
-    "pkginfo" : "0.2.x",
-    "passport-oauth" : "~0.1.4"
+  "main": "./lib/passport-eventbrite-oauth",
+  "dependencies": {
+    "pkginfo": "0.2.x",
+    "passport-oauth": "~0.1.4"
   },
-  "devDependencies" : {
-    "vows" : "0.6.x"
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "should": "~2.0.2",
+    "underscore": "~1.5.2"
   },
-  "scripts" : {
-    "test" : "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
   },
-  "engines" : {
-    "node" : ">= 0.4.0"
+  "engines": {
+    "node": ">= 0.4.0"
   }
 }

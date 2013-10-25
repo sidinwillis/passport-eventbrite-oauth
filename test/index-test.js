@@ -1,16 +1,14 @@
-var vows = require( 'vows' );
-var assert = require( 'assert' );
-var util = require( 'util' );
-var eventbrite = require( 'passport-eventbrite-oauth' );
+require('./test-helper')
+var eventbrite = require( '../lib/passport-eventbrite-oauth' );
 
-vows.describe( 'passport-eventbrite-oauth' ).addBatch( {
+describe( 'passport-eventbrite-oauth', function() {
+  describe('module', function() {
+    it('should report a version', function() {
+      _.isString(eventbrite.version).should.equal(true)
+    })
 
-  'module' : {
-    'should report a version' : function ( x ) {
-      assert.isString( eventbrite.version );
-    },
-    'should export OAuth 2.0 strategy' : function ( x ) {
-      assert.isFunction( eventbrite.OAuth2Strategy );
-    }
-  }
-} ).export( module );
+    it('should export 0Auth 2.0 strategy', function() {
+      eventbrite.OAuth2Strategy.should.be.an.instanceOf(Function)
+    })
+  })
+})

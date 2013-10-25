@@ -4,7 +4,7 @@ SOURCES = lib/**/*.js
 # Node Tests
 # ==============================================================================
 
-VOWS = ./node_modules/.bin/vows
+MOCHA = ./node_modules/.bin/mocha
 TESTS ?= test/*-test.js
 
 test:
