@@ -1,6 +1,6 @@
 {
   "name": "passport-eventbrite-oauth",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "EventBrite (OAuth2) authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -21,6 +21,9 @@
     "name": "JP Erkelens",
     "email": "jp@jamplify.com"
   },
+   "contributors": [
+      {"name": "Matt Roman", "email": "matt@jamplify.com"}
+  ],
   "licenses": [
     {
       "type": "MIT",
@@ -38,7 +41,7 @@
     "underscore": "~1.5.2"
   },
   "scripts": {
-    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+    "test": "NODE_PATH=lib node_modules/.bin/mocha test/*-test.js"
   },
   "engines": {
     "node": ">= 0.4.0"
