@@ -1,6 +1,6 @@
 {
   "name": "passport-eventbrite-oauth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "EventBrite (OAuth2) authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -33,7 +33,7 @@
   "main": "./lib/passport-eventbrite-oauth",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport-oauth": "~0.1.4"
+    "passport-oauth": "~1.0.0"
   },
   "devDependencies": {
     "mocha": "~1.13.0",
