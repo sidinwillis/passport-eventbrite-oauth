@@ -72,6 +72,7 @@ For a complete, working example, refer to the [OAuth 2.0 example](https://github
 ## Credits
 
   - [Venkat Peri](http://github.com/venkatperi)
+  - [Thomas Shafer](https://github.com/growlsworth)
 
 ## License
 
