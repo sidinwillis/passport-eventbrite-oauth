@@ -83,17 +83,18 @@ describe('EventbriteStrategy', function() {
       beforeEach(function(done) {
         this.strategy._oauth2.get = function(x, y, callback) {
           var body = '{ \
-           "user": { \
-             "user_id": "00000000000000", \
-             "email": "fred.example@gmail.com", \
-             "verified_email": true, \
-             "name": "Fred Example", \
-             "first_name": "Fred", \
-             "last_name": "Example", \
-             "picture": "https://lh5.eventbriteusercontent.com/-2Sv-4bBMLLA/AAAAAAAAAAI/AAAAAAAAABo/bEG4kI2mG0I/photo.jpg", \
-             "gender": "male", \
-             "locale": "en-US" \
-            } \
+           "id": "00000000000000", \
+           "emails": [ \
+             { \
+                "email": "fred.example@gmail.com", \
+                "verified": true, \
+                "primary": true \
+             } \
+           ], \
+           "name": "Fred Example", \
+           "first_name": "Fred", \
+           "last_name": "Example", \
+           "image_id": "00000000" \
           }';
 
           callback(null, body, undefined);
