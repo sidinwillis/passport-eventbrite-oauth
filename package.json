@@ -1,5 +1,5 @@
 {
-  "name": "passport-eventbrite-oauth",
+  "name": "@nvite/passport-eventbrite-oauth",
   "version": "0.0.3",
   "description": "EventBrite (OAuth2) authentication strategies for Passport.",
   "keywords": [
@@ -10,6 +10,9 @@
     "authentication",
     "identity"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/jamplify/passport-eventbrite-oauth.git"
