@@ -1,6 +1,6 @@
 {
   "name": "@nvite/passport-eventbrite-oauth",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "EventBrite (OAuth2) authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -24,8 +24,11 @@
     "name": "JP Erkelens",
     "email": "jp@jamplify.com"
   },
-   "contributors": [
-      {"name": "Matt Roman", "email": "matt@jamplify.com"}
+  "contributors": [
+    {
+      "name": "Matt Roman",
+      "email": "matt@jamplify.com"
+    }
   ],
   "licenses": [
     {
